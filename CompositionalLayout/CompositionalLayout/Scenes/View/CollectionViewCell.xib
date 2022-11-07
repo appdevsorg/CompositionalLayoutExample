@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="CompositionalLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcQ-B2-cuM">
+                        <rect key="frame" x="2" y="2" width="46" height="46"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dcQ-B2-cuM" secondAttribute="trailing" constant="2" id="TXY-Q4-X7a"/>
+                <constraint firstAttribute="bottom" secondItem="dcQ-B2-cuM" secondAttribute="bottom" constant="2" id="fkC-XU-kzT"/>
+                <constraint firstItem="dcQ-B2-cuM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="ixw-UM-5Pp"/>
+                <constraint firstItem="dcQ-B2-cuM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="pcA-gd-VaU"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="dcQ-B2-cuM" id="Lc3-op-d7K"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="132"/>
+        </collectionViewCell>
+    </objects>
+</document>
